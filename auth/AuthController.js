@@ -2,16 +2,15 @@ var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
 var VerifyToken = require('./VerifyToken');
-
-router.use(bodyParser.urlencoded({ extended: false }));
-router.use(bodyParser.json());
+const { body, validationResult } = require('express-validator');
+const LogEntry = require('../models/LogEntry');
 var User = require('../models/User');
 var jwt = require('jsonwebtoken');
 var bcrypt = require('bcryptjs');
-// var config = require('../config');
 require("dotenv").config();
-const { body, validationResult } = require('express-validator');
-const LogEntry = require('../models/LogEntry');
+
+router.use(bodyParser.urlencoded({ extended: false }));
+router.use(bodyParser.json());
 
 function validateSignUp(){
 
