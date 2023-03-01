@@ -85,14 +85,13 @@ Create a note
       "text": "A new note 1"
    }
 ```
-
-## GET /note/list
-Read all notes
-
 ## GET /note/:id
 Read a note by id
 
 ``` /note/1```
+
+## GET /note
+Read all notes
 
 ## PUT /note/:id
 Update a note by id
