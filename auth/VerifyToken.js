@@ -1,14 +1,9 @@
 var jwt = require('jsonwebtoken'); // used to create, sign, and verify tokens
-// var config = require('../config'); // get our config file
 require("dotenv").config();
 const User = require('../models/User');
 
 function verifyToken(req, res, next) {
-  // console.log(req);
-
   let token = req.headers['authorization'];
-  // console.log({token});
-
   if (!token)
     return res.status(403).send({ auth: false, message: 'No token provided.' });
 
