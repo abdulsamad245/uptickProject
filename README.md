@@ -49,7 +49,7 @@ Register a user
     "lastName": "Doe",
     "email": "john@gmail.com",
     "password": "pass123",
-    "passwordConfirm: "pass123"
+    "passwordConfirm": "pass123"
    }
 ```
 
@@ -59,7 +59,7 @@ Login a user
 ```json
    {
     "email": "john@gmail.com",
-    "password": "pass123"
+    "password": "pass321"
    }
 ```
 
