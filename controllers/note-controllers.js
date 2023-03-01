@@ -61,14 +61,5 @@ module.exports.deleteNoteById = function (req, res, next) {
     });
 };
 
-module.exports.getAllNotes = function (req, res, next) {
-    if (!req.user.isAdmin)
-        return res.status(403).json({message: 'You dont have enough permission to perform this action'})
 
-    Note.find({}, function (err, notes) {
-        if (err)
-            return res.status(500).json({errors: err});
-        res.json({notes: notes});
-    });
-};
 
