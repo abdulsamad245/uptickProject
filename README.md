@@ -22,7 +22,7 @@ To build and run this you will need [Node.js](https://nodejs.org/en/) and npm in
 * Replace DATABASE with your mongodb uri string.
 * Replace JWT_SECRET with your secret key.
 * Replace PORT with any free port on your machine.
-* Start the app. run ````npm start```. This will start the app on http://localhost:PORT.
+* Start the app. run ```npm start```. This will start the app on http://localhost:PORT
 
 ## Base URL
 ```https://example.com/api/v1/``` (Notes)
