@@ -25,14 +25,14 @@ To build and run this you will need [Node.js](https://nodejs.org/en/) and npm in
 * Start the app. run ```npm start```. This will start the app on http://localhost:PORT
 
 ## Base URL
-```https://example.com/api/v1/``` (Notes)
-```https://example.com/api/auth/``` (Users)
+* ```https://example.com/api/v1/``` (Notes)
+* ```https://example.com/api/auth/``` (Users)
 
-```https://crud-notes-api.onrender.com/api/v1```
-```https://crud-notes-api.onrender.com/api/auth```
+* ```https://crud-notes-api.onrender.com/api/v1``` (Notes)
+* ```https://crud-notes-api.onrender.com/api/auth``` (Users)
 
 ## Authentication
-All endpoints, except the /login and /register endpoints, require authentication. To authenticate, send a POST request to the /login endpoint with a valid email and password. The server will respond with an access token, which should be included in the headers of subsequent requests:
+All endpoints, except the /login, /register and /logout endpoints, require authentication. To authenticate, send a POST request to the /login endpoint with a valid email and password. The server will respond with an access token, which should be included in the headers of subsequent requests:
 
 ```Authorization: Bearer <access_token>```
 
